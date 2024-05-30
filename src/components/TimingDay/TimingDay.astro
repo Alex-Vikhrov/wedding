@@ -1,32 +1,21 @@
 ---
+import { Image } from 'astro:assets';
+import icon_1 from '../../../public/1.svg';
+import icon_2 from '../../../public/3.svg';
+import icon_3 from '../../../public/4.svg';
+import icon_4 from '../../../public/5.svg';
+import icon_5 from '../../../public/7.svg';
 import './style.scss';
 ---
 
-<!-- <div class="segment"><div class="dot"></div></div>
-    <div class="segment"><div class="dot"></div></div>
-    <div class="segment"><div class="dot"></div></div>
-    <div class="segment"><div class="dot"></div></div>
-    <div class="segment"><div class="dot"></div></div> -->
 <section class="timing-day">
-  <!-- <h2>Программа дня</h2> -->
-  <!-- <div class="timing-day__container">
-    <div class="vertical-line">
-    
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
-  </div>
-  <p class="welcome__text">Будем рады видеть вас на нашем празднике!</p> -->
   <div class="timing-day__container">
     <h2 class="timing-day__title">Программа дня</h2>
 
     <div class="vertical-line">
       <div class="segment">
         <div class="icon">
-          <img src="/public/1.svg" class="icon__img" />
+          <Image src={icon_1} alt="icon_1" loading="eager" class="icon__img" />
         </div>
         <div class="dot"></div>
         <div class="text">
@@ -40,7 +29,7 @@ import './style.scss';
       </div>
       <div class="segment">
         <div class="icon">
-          <img src="/public/3.svg" class="icon__img" />
+          <Image src={icon_2} alt="icon_2" loading="eager" class="icon__img" />
         </div>
         <div class="dot"></div>
         <div class="text">
@@ -53,7 +42,7 @@ import './style.scss';
       </div>
       <div class="segment">
         <div class="icon">
-          <img src="/public/4.svg" class="icon__img" />
+          <Image src={icon_3} alt="icon_3" loading="eager" class="icon__img" />
         </div>
         <div class="dot"></div>
         <div class="text">
@@ -66,7 +55,7 @@ import './style.scss';
       </div>
       <div class="segment">
         <div class="icon">
-          <img src="/public/5.svg" class="icon__img" />
+          <Image src={icon_4} alt="icon_4" loading="eager" class="icon__img" />
         </div>
         <div class="dot"></div>
         <div class="text">
@@ -79,7 +68,7 @@ import './style.scss';
       </div>
       <div class="segment">
         <div class="icon">
-          <img src="/public/7.svg" class="icon__img" />
+          <Image src={icon_5} alt="icon_5" loading="eager" class="icon__img" />
         </div>
         <div class="dot"></div>
         <div class="text">
