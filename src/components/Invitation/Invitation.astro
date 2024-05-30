@@ -1,0 +1,36 @@
+---
+import './style.scss';
+
+interface Props {
+  title?: string;
+  body?: string;
+  href?: string;
+}
+type PropsTimer = Partial<Props>;
+
+const { href, title, body } = Astro.props;
+---
+
+<section class="invitation">
+  <h2>Дорогие родные <br /> и друзья!</h2>
+  <p class="invitation__text">
+    Приглашаем вас разделить
+    <br />
+    с нами радость особенного
+    <br />
+    для нас события и
+    <br />
+    стать частью нашей
+    <br />
+    семейной истории!
+  </p>
+
+  <p class="invitation__subtitle">Ждем вас</p>
+
+  <h3>22 июня 2024</h3>
+
+  <p class="invitation__place">
+    В ресторане <br /> "Мидийная"
+  </p>
+  <address>по адресу: г.Саратов, <br /> ул. Астраханская 102 корпус 2, этаж 2</address>
+</section>

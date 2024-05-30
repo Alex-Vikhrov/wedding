@@ -1,0 +1,21 @@
+.welcome{
+    &__text{
+        font-family: "Playfair Display", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0px 0px 60px 0px;
+    }
+
+    &__subscribe{
+        font-family: "Great Vibes", cursive;
+        font-style: italic;
+        font-size: 55px;
+        font-weight: 400;
+        color: #333;
+        text-align: center;
+    }
+}

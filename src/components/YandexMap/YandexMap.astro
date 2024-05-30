@@ -1,0 +1,50 @@
+---
+import './style.scss';
+
+interface Props {
+  title?: string;
+  body?: string;
+  href?: string;
+}
+type PropsTimer = Partial<Props>;
+
+const { href, title, body } = Astro.props;
+---
+
+<section class="map">
+  <div class="map__description">
+    <h2>Как добраться</h2>
+    <p>
+      Для вашего удобства мы <br /> подготовили карту. Надеемся, <br /> что вы легко
+      найдете место <br /> проведения свадьбы и порадуете <br /> нас своим присутствием!
+    </p>
+  </div>
+  <address id="map" class="map__container-yandex"></address>
+</section>
+<script
+  src="https://api-maps.yandex.ru/2.1/?apikey=d1733c10-fbfc-4cd6-a3a7-d99bd59728ab&lang=ru_RU" type="text/javascript"></script>
+<script src="./map.ts"></script>
+
+<!-- <script>
+    const initMap = () => {
+      const script = document.createElement('script');
+      script.src = `https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU`;
+      script.async = true;
+      document.head.appendChild(script);
+  
+      script.onload = () => {
+        ymaps!.ready(() => {
+          new ymaps.Map('map', {
+            center: [55.751574, 37.573856],
+            zoom: 10
+          });
+        });
+      };
+    };
+  
+    if (document.readyState === 'complete') {
+      initMap();
+    } else {
+      window.addEventListener('load', initMap);
+    }
+  </script> -->

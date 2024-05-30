@@ -1,0 +1,36 @@
+---
+import './style.scss';
+
+interface Props {
+  title?: string;
+  body?: string;
+  href?: string;
+}
+type PropsTimer = Partial<Props>;
+
+const { href, title, body } = Astro.props;
+---
+
+<section class="timer">
+  <h2 class="timer__title">До свадьбы осталось</h2>
+  <div id="coundown" class="coundown">
+    <div class="time">
+      <h2 id="days">00</h2>
+      <span>дней</span>
+    </div>
+    <div class="time">
+      <h2 id="hours">00</h2>
+      <span>часов</span>
+    </div>
+    <div class="time">
+      <h2 id="minutes">00</h2>
+      <span>минут</span>
+    </div>
+    <div class="time">
+      <h2 id="seconds">00</h2>
+      <span>секунд</span>
+    </div>
+  </div>
+</section>
+
+<script src="./timer.ts"></script>

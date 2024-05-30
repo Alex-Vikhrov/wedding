@@ -1,0 +1,37 @@
+.timer {
+    position: absolute;
+    margin-top: 460px;
+
+    &__title {
+        font-family: "Playfair Display", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 28px;
+        color: #ffffff;
+        margin-bottom: 15px;
+        
+    }
+}
+
+.coundown {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+h2 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    color: #ececec;
+    // text-shadow: 2px 1px 5px rgb(252, 252, 252);
+}
+
+span {
+    font-family: "Great Vibes", cursive;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 0px;
+    // letter-spacing: 0.2rem;
+}

@@ -1,0 +1,15 @@
+---
+import './style.scss';
+
+interface Props {
+  color?: string;
+  thickness?: string;
+  margin?: string;
+}
+
+const { thickness = '1px' } = Astro.props;
+---
+
+<div class="divider-container">
+  <hr />
+</div>

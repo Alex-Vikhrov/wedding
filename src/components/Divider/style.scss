@@ -1,0 +1,11 @@
+.divider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0px 60px 0px;
+
+    & hr {
+        width: 130px;
+        border-top: 2px solid #252525;
+    }
+}
