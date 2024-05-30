@@ -1,5 +1,10 @@
 ---
+import {Image} from "astro:assets";
 import './style.scss';
+import Midiy_1 from '../../../public/Midiy_1.jpg';
+import Midiy_2 from '../../../public/Midiy_2.jpg';
+import Midiy_3 from '../../../public/Midiy_3.jpg';
+
 ---
 
 <div
@@ -15,13 +20,18 @@ import './style.scss';
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../../../public/midiy_1" class="d-block w-100" />
+      <Image src={Midiy_1} alt="midiy_1" loading="eager" class="d-block w-100"/>
+      <!-- <img src="/public/Midiy_1" class="d-block w-100" /> -->
     </div>
     <div class="carousel-item">
-      <img src="../../../public/midiy_2.jpg" class="d-block w-100" />
+      <Image src={Midiy_2} alt="midiy_1" loading="eager" class="d-block w-100"/>
+
+      <!-- <img src="/public/Midiy_2.jpg" class="d-block w-100" /> -->
     </div>
     <div class="carousel-item">
-      <img src="../../../public/midiy_3.jpg" class="d-block w-100" />
+      <Image src={Midiy_3} alt="midiy_1" loading="eager" class="d-block w-100"/>
+
+      <!-- <img src="/public/Midiy_3.jpg" class="d-block w-100" /> -->
     </div>
   </div>
   <button
