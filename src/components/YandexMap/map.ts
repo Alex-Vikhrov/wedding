@@ -6,19 +6,15 @@ const init = () => {
   const map = new ymaps.Map('map', {
     center: center,
     zoom: 19,
-
   });
 
-  const placemark = new ymaps.Placemark(
-    midiy,
-    null,
-    {
-      iconLayout: 'default#image',
-      iconImageHref: "/public/placeholder.png",
-      iconImageSize: [30, 30],
-      iconImageOffset: [-14, -32],
-    }
-  );
+  const placemark = new ymaps.Placemark(midiy, null, {
+    preset: 'islands#redIcon',
+    // iconLayout: 'default#image',
+    // iconImageHref: "/public/placeholder.png",
+    // iconImageSize: [30, 30],
+    // iconImageOffset: [-14, -32],
+  });
 
   map.controls.remove('searchControl'); // удаляем поиск
   map.controls.remove('trafficControl'); // удаляем контроль трафика
